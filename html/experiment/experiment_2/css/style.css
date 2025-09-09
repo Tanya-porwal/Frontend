@@ -284,13 +284,12 @@ blockquote::before {
   outline-offset: 2px;
 }
 
-/* ---------- Footer ---------- */
 footer {
   padding: 26px;
   text-align: center;
   color: #6b7280;
 }
-/* ---------- Task 2: Movie List Styling ---------- */
+
 .movie-list {
   list-style-type: square;
   padding-left: 1.5rem;
@@ -300,19 +299,31 @@ footer {
 .movie-list li {
   color: var(--ink);
   margin-bottom: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.movie-list li:hover {
+  color: #4e54c8;
+  transform: translateX(6px);
 }
 
 .movie-list .favorite {
-  background-color: var(--accent);
+  background: linear-gradient(135deg, #ff4f81, #ff758c);
   color: #fff;
   font-weight: bold;
   padding: 6px 12px;
   border-radius: 6px;
   display: inline-block;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ---------- Task 3: City List Styling ---------- */
+.movie-list .favorite:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
 .city-list {
   list-style-type: decimal;
   margin-left: 1.5rem;
@@ -320,15 +331,19 @@ footer {
   padding-left: 0.5rem;
 }
 
-.city-list li:nth-child {
-  color: hsl(210, 70%, 35%);
-  font-style: italic;
-}
-/* 
-.city-list li:nth-child(even) {
+.city-list li {
   background-color: #e0f7fa;
   color: rgba(0, 150, 136, 0.9);
   padding: 4px 6px;
   border-left: 4px solid #009688;
   border-radius: 3px;
-} */
+  margin-bottom: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.city-list li:hover {
+  background-color: #b2ebf2;
+  transform: translateX(8px);
+}
+
