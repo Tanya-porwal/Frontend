@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Studies - NovaTech Atelier</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f6fa;
+    }
+
+    header {
+      background: linear-gradient(90deg, #4e54c8, #8f94fb);
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .case {
+      background: white;
+      padding: 20px;
+      margin: 30px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+      display: flex;          /* image + content side by side */
+      align-items: center;    /* vertically center */
+      gap: 20px;              /* space between image & text */
+    }
+
+    .case h3 {
+      margin-top: 0;
+      color: #4e54c8;
+    }
+
+    .case img {
+      width: 300px;
+      height: auto;
+      border-radius: 8px;
+      flex-shrink: 0; /* image shrink na ho */
+    }
+
+    .case-content {
+      flex: 1; /* text wala part full width le */
+    }
+
+    .case p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .case a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 18px;
+      text-decoration: none;
+      color: white;
+      background: #4e54c8;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .case a:hover {
+      background: #ff4f81;
+      box-shadow: 0 5px 15px rgba(255, 79, 129, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Case Studies</h1>
+    <p>Real-world projects where NovaTech Atelier made an impact</p>
+  </header>
+
+  <section>
+    <div class="case">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.6w2jbRu9u-4pvpRSn6UrEgHaF0?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Fintech Project">
+      <div class="case-content">
+        <h3>1. Fintech Transformation</h3>
+        <p>We partnered with a leading fintech brand to redesign their mobile banking app, 
+        improving user experience and increasing daily active users by 40%.</p>
+      </div>
+    </div>
+
+    <div class="case">
+      <img src="https://blog.ipleaders.in/wp-content/uploads/2021/11/ai-healthcare-title-image-2560x1365-1.jpeg" alt="AI in Healthcare">
+      <div class="case-content">
+        <h3>2. AI in Healthcare</h3>
+        <p>Developed a secure AI system for a healthcare provider that ensures patient data 
+        privacy while automating diagnosis support for doctors.</p>
+      </div>
+    </div>
+
+    <div class="case">
+      <img src="https://agility-research.com/wp-content/uploads/2023/01/Luxury-Retail-1.jpg" alt="Luxury Retail Project">
+      <div class="case-content">
+        <h3>3. Luxury Retail Platform</h3>
+        <p>Created a cloud-based e-commerce platform for a luxury fashion brand, 
+        enabling seamless shopping experiences across 3 continents.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

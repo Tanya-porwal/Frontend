@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  border: 2px solid #333;
+  margin: 20px;
+  flex-direction: row;
+  flex-wrap: 200px;
+  justify-content: space-around;
+  height: 200px; /* useful for vertical alignment demos */
+}
+
+.item {
+  background: lightblue;
+  border: 1px solid #333;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  flex-wrap: 200px;
+  .item:nth-child(2) {
+  flex-shrink: 2; /* shrinks twice as fast */
+  }
+
+}
+
