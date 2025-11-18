@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Ball</title>
+
+</head>
+<body>
+    <style>
+        @keyframes bounce {
+            0%,100% {
+                transform: translate(0,0);
+            }
+            25%{
+                transform: translate(75vw,0);
+            }
+            50%{
+                transform: translate(75vw,75vh);
+            }
+            75%{
+                transform: translate(0,75vh);
+            }
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            background: orange;
+            border-radius: 50%;
+            animation: bounce 6s ease-in-out infinite;
+}
+    </style>
+
+<div class="ball"></div>
+</body>
+</html>

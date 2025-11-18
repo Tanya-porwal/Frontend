@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moon Animation</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .moon {
+      width: 200px;
+      height: 200px;
+      background: url('satellite.png') no-repeat center/cover; 
+      border-radius: 50%;
+      animation: glow 3s infinite alternate ease-in-out, float 5s infinite ease-in-out;
+    }
+    .star{
+        width:20px;
+        height:auto ;
+        background: url('');
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 10px #fff, 0 0 30px #ccc;
+      }
+      to {
+        box-shadow: 0 0 20px #fff, 0 0 60px #ddd;
+      }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="moon"></div>
+</body>
+</html>
