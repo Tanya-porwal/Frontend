@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .small-box{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(206, 12, 158); 
+        }
+        .big-box{
+            width: 250px;
+            height: 250px;
+            background-color: teal;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const body=document.querySelector("body");
+        const box=document.createElement("div");
+        let flag =0;
+        const btn=document.createElement("button");
+        btn.textContent="Click ME!" ;
+        box.classList.add("small-box");
+        body.appendChild(box);
+        body.appendChild(btn);
+        btn.addEventListener("click",function(){
+            // box.classList.add("big-box");
+            // box.classList.remove("small-box");
+            if(flag===0){
+                box.classList.add("big-box");
+                box.classList.remove("small-box");
+                flag=1;
+                }
+            else{
+                box.classList.remove("big-box");
+                box.classList.add("small-box");
+                flag=0;
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+      }
+      .small-box {
+        width: 200px;
+        height: 200px;
+        background-color: teal;
+      }
+      .big-box {
+        width: 400px;
+        height: 400px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="small-box" id="box"></div>
+    <button id="btn"></button>
+    <script>
+      const body = document.querySelector("body");
+      const box = document.querySelector("#box");
+      const btn = document.querySelector("#btn");
+      btn.textContent = "click me!";
+      btn.addEventListener("click", function () {
+        box.classList.remove("small-box");
+        box.classList.add("big-box");
+      });
+    </script>
+  </body>
+</html>
+  -->

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form id="companyForm">
+    <h2>Company Information</h2>
+    
+    <label for="companyName">Company Name:</label>
+    <input type="text" id="companyName" name="companyName" required>
+
+    <label for="motto">Company Motto:</label>
+    <input type="text" id="motto" name="motto" required>
+
+    <label for="logo">Company Logo:</label>
+    <input type="file" id="logo" name="logo" accept="image/*" required>
+
+    <div class="buttons">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
